@@ -1,0 +1,10 @@
+{  
+  "provinsi": [ 
+    { "id": 1, "nama": "Riau" }, 
+    { "id": 2, "nama": "Jawa Barat" } 
+  ], 
+  "kabupaten": { 
+    "1": ["Pekanbaru", "Dumai", "Siak", "Bengkalis"], 
+    "2": ["Bandung", "Bekasi", "Bogor"] 
+  } 
+} 

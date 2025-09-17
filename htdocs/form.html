@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pendaftaran UKM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 flex justify-between items center">
+        <h1 class="text-xl font-bold">UKM Teknologi</h1>
+        <nav class="space-x-4">
+            <a href="struktur.html" class="hover:underline">Struktur</a>
+            <a href="elemen.html" class="hover:underline">Profil</a>
+            <a href="form.html" class="hover:underline">Pendaftaran</a>
+            <a href="layout.html" class="hover:underline">Beranda</a>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="grid grid-cols-4 gap-4 p-4">
+        <!-- Sidebar -->
+        <aside class="col-span-1 bg-gray-100 p-3">
+            <h2 class="font-semibold mb-2">Menu Samping</h2>
+            <ul class="space-y-2">
+                <li><a href="elemen.html" class="text-blue-600">Profil UKM</a></li>
+                <li><a href="form.html" class="text-blue-600">Pendaftaran</a></li>
+                <li><a href="struktur.html" class="text-blue-600">Struktur HTML</a></li>
+            </ul>
+        </aside>
+
+        <!-- Form -->
+        <section class="col-span-3 bg-white p-5 shadow rounded">
+            <h2 class="text-lg font-bold mb-3">Form Pendaftaran</h2>
+            <p>Silakan isi form di bawah untuk mendaftar ke UKM Teknologi.</p>
+
+            <form action="proses.php" method="POST" onsubmit="return validasiForm()" class="bg-white p-6 shadow-md rounded w-full max-w-md space-y-4">
+
+                <!-- Nama -->
+                <input type="text" id="nama" name="nama" placeholder="Nama Lengkap" class="border p-2 w-full">
+
+                <!-- Email -->
+                <input type="email" id="email" name="email" placeholder="Email" class="border p-2 w-full">
+
+                <!-- HP -->
+                <input type="text" id="hp" name="hp" placeholder="Nomor HP" class="border p-2 w-full">
+
+                <!-- Jenis Kelamin -->
+                <div>
+                    <span>Jenis Kelamin:</span><br>
+                    <label><input type="radio" name="jk" value="L"> Laki-laki</label>
+                    <label><input type="radio" name="jk" value="P"> Perempuan</label>
+                </div>
+
+                <!-- Provinsi -->
+                <div>
+                    <label for="provinsi" class="block">Provinsi:</label>
+                    <select id="provinsi" name="provinsi" class="border p-2 w-full">
+                        <option value="">-- Pilih Provinsi --</option>
+                    </select>
+                </div>
+
+                <!-- Kabupaten -->
+                <div>
+                    <label for="kabupaten" class="block">Kabupaten:</label>
+                    <select id="kabupaten" name="kabupaten" class="border p-2 w-full">
+                        <option value="">-- Pilih Kabupaten --</option>
+                    </select>
+                </div>
+
+                <!-- Password -->
+                <input type="password" id="password" name="password" placeholder="Password" class="border p-2 w-full">
+
+                <!-- Submit -->
+                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded w-full">
+                    Daftar
+                </button>
+
+                <!-- Error Message -->
+                <p id="error-msg" class="text-red-600 text-sm text-center"></p>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-3 mt-6">
+        &copy; 2025 UKM Teknologi Kampus
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <title>Website UKM</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <?php
+        // Mendapatkan halaman aktif dari URL
+        $currentPage = basename($_SERVER['PHP_SELF']);
+    ?>
+    <header class="bg-green-600 text-white px-4 py-3 flex items-center justify-between">
+    <h1 class="text-xl font-bold">UKM Teknologi</h1>
+    <nav class="space-x-4">
+        <a href="struktur.html" class="hover:underline">Struktur</a>
+        <a href="elemen.html" class="hover:underline">Profil</a>
+        <a href="form.html.html" class="hover:underline">Pendaftaran</a>
+        <a href="layout.html" class="hover:underline">Layout</a>
+    </nav>
+    </header>
+
+    <main class="grid grid-cols-4 gap-4 p-4">
+        <aside class="col-span-1 bg-gray-100 p-3">
+            <h2 class="font-semibold mb-2">Menu Samping</h2>
+            <ul class="space-y-2">
+                <li><a href="elemen.html" class="text-blue-600">Profil UKM</a></li>
+                <li><a href="form.html.html" class="text-blue-600">Pendaftaran</a></li>
+                <li><a href="struktur.html" class="text-blue-600">Struktur
+                        HTML</a></li>
+            </ul>
+        </aside>
+        <section class="col-span-3 bg-white p-5 shadow rounded">
+            <h2 class="text-lg font-bold mb-3">Konten Utama</h2>
+            <p>Selamat datang di website UKM Teknologi!</p>
+        </section>
+</main> 
+    <footer class="bg-gray-800 text-white text-center p-3 mt-6"> 
+    &copy; 2025 UKM Teknologi Kampus 
+    </footer>
+</body>
+</html>

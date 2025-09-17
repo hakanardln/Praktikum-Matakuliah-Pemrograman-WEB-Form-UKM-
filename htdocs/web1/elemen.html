@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profil UKM Polbeng</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-green-600 text-white px-4 py-3 flex items-center justify-between">
+    <div class="text-lg font-bold">UKM Politeknik Negeri Bengkalis</div>
+    <button class="md:hidden" id="menu-btn">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+    <ul class="hidden md:flex space-x-6" id="menu">
+      <li><a href="struktur.html" class="hover:underline">Struktur</a></li>
+      <li><a href="elemen.html" class="hover:underline font-semibold">Profil</a></li>
+      <li><a href="form.html" class="hover:underline">Form</a></li>
+      <li><a href="layout.html" class="hover:underline">Layout</a></li>
+    </ul>
+  </nav>
+
+  <div class="p-8 max-w-7xl mx-auto">
+    <h1 class="text-3xl font-bold mb-8">Profil UKM Polbeng</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- EC.COM -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="Ecom Logo.png" class="w-full h-48 object-cover" />
+        <div class="p-6">
+          <h2 class="text-xl font-semibold mb-2">EC.COM</h2>
+          <p class="text-gray-700 mb-4">Komunitas bahasa inggris di Polbeng yang bertujuan mengembangkan
+                    meningkatkan kemampuan bahasa inggris mahasiswa melalui pelatihan, seminar.</p>
+          <a href="#eccom" class="text-blue-600 hover:underline">Selengkapnya</a>
+        </div>
+      </div>
+
+      <!-- UKM Olahraga -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7W-AXnN2kQ-TniSb8u7D3TCgw_pRkgmfzA&s" class="w-full h-48 object-cover" />
+        <div class="p-6">
+          <h2 class="text-xl font-semFibold mb-2">UKM Olahraga</h2>
+          <p class="text-gray-700 mb-4">Mengelola berbagai cabang olahraga untuk meningkatkan kebugaran dan prestasi mahasiswa.</p>
+          <a href="#olahraga" class="text-blue-600 hover:underline">Selengkapnya</a>
+        </div>
+      </div>
+
+      <!-- UKM Kesenian -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGJgZ0eVhhCDkuv5r8B7Lu5uSWvd-VYGPtSg&s" class="w-full h-48 object-cover" />
+        <div class="p-6">
+          <h2 class="text-xl font-semibold mb-2">UKM Kesenian</h2>
+          <p class="text-gray-700 mb-4">Fokus pada pengembangan seni budaya seperti tari, musik, dan teater di kampus.</p>
+          <a href="#kesenian" class="text-blue-600 hover:underline">Selengkapnya</a>
+        </div>
+      </div>
+
+      <!-- UKM MAPALA -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAAF3INuqFW-ABvfTJV4Y-0jVP3GAkWdAqZw&s" class="w-full h-48 object-cover" />
+        <div class="p-6">
+          <h2 class="text-xl font-semibold mb-2">UKM MAPALA</h2>
+          <p class="text-gray-700 mb-4">Komunitas pecinta alam aktif melakukan pendakian, konservasi, dan pelatihan survival.</p>
+          <a href="#mapala" class="text-blue-600 hover:underline">Selengkapnya</a>
+        </div>
+      </div>
+
+      <!-- UKM Jurnalistik -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3gmwqOmikqJBM3_uukWC5D5PwyVK1iOzXRw3lSx-3elJpt0sEXe4J8ClxzG4p-rxwBnU&usqp=CAU" class="w-full h-48 object-cover" />
+        <div class="p-6">
+          <h2 class="text-xl font-semibold mb-2">UKM Jurnalistik</h2>
+          <p class="text-gray-700 mb-4">Mengembangkan kemampuan menulis, fotografi, dan peliputan berita di kampus.</p>
+          <a href="#jurnalistik" class="text-blue-600 hover:underline">Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>

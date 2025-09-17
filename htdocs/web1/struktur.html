@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Struktur Organisasi UKM Polbeng</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="#">
+
+    <!-- Navbar -->
+    <nav class="bg-green-600 text-white px-4 py-3 flex items-center justify-between">
+        <div class="text-lg font-bold">UKM Polbeng</div>
+        <button class="md:hidden" id="menu-btn">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+        <ul class="hidden md:flex space-x-6" id="menu">
+            <li><a href="struktur.html" class="hover:underline font-semibold">Struktur</a></li>
+            <li><a href="elemen.html" class="hover:underline">Elemen</a></li>
+            <li><a href="form.html" class="hover:underline">Form</a></li>
+            <li><a href="layout.html" class="hover:underline">Layout</a></li>
+        </ul>
+    </nav>
+
+    <div class="flex min-h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-gray-800 text-white p-6 hidden md:block">
+            <h2 class="text-xl font-bold mb-6">Organisasi UKM</h2>
+            <ul class="space-y-3">
+                <li><a href="#eccom" class="hover:underline">EC.COM</a></li>
+                <li><a href="#olahraga" class="hover:underline">UKM Olahraga</a></li>
+                <li><a href="#kesenian" class="hover:underline">UKM Kesenian</a></li>
+                <li><a href="#mapala" class="hover:underline">UKM MAPALA</a></li>
+                <li><a href="#jurnalistik" class="hover:underline">UKM Jurnalistik</a></li>
+            </ul>
+        </aside>
+
+        <!-- Konten utama -->
+        <main class="flex-1 p-8">
+            <h1 class="text-3xl font-bold mb-8">Struktur Organisasi UKM di Polbeng</h1>
+
+            <!-- EC.COM -->
+            <section id="eccom" class="mb-10 bg-white p-6 rounded shadow">
+                <h2 class="text-2xl font-semibold mb-4">EC.COM (English Conversation Community)</h2>
+                <p class="mb-4">EC.COM adalah komunitas bahasa inggris di Polbeng yang bertujuan mengembangkan
+                    meningkatkan kemampuan bahasa inggris mahasiswa melalui pelatihan, seminar.</p>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>Ketua: Akmal Mahmudi</li>
+                    <li>Sekretaris: Suci Rahmawati</li>
+                    <li>Bendahara: Nurchu Mairoh</li>
+                    <li>Divisi English Course</li>
+                    <li>Divisi English Development</li>
+                    <li>Divisi Newscasting & Mediacreative</li>
+                    <li>Divisi Communication and Information</li>
+                </ul>
+            </section>
+
+            <!-- UKM Olahraga -->
+            <section id="olahraga" class="mb-10 bg-white p-6 rounded shadow">
+                <h2 class="text-2xl font-semibold mb-4">UKM Olahraga</h2>
+                <p class="mb-4">UKM Olahraga mengelola berbagai cabang olahraga untuk meningkatkan kebugaran dan
+                    prestasi mahasiswa Polbeng.</p>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>Ketua: Siti Nurhaliza</li>
+                    <li>Sekretaris: Ahmad Fauzi</li>
+                    <li>Bendahara: Lina Marlina</li>
+                    <li>Divisi Sepak Bola</li>
+                    <li>Divisi Basket</li>
+                    <li>Divisi Atletik</li>
+                </ul>
+            </section>
+
+            <!-- UKM Kesenian -->
+            <section id="kesenian" class="mb-10 bg-white p-6 rounded shadow">
+                <h2 class="text-2xl font-semibold mb-4">UKM Kesenian</h2>
+                <p class="mb-4">UKM Kesenian fokus pada pengembangan seni budaya, seperti tari, musik, dan teater di
+                    lingkungan kampus.</p>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>Ketua: Dewi Lestari</li>
+                    <li>Sekretaris: Riko Pratama</li>
+                    <li>Bendahara: Maya Sari</li>
+                    <li>Divisi Tari Tradisional</li>
+                    <li>Divisi Musik</li>
+                    <li>Divisi Teater</li>
+                </ul>
+            </section>
+
+            <!-- UKM MAPALA -->
+            <section id="mapala" class="mb-10 bg-white p-6 rounded shadow">
+                <h2 class="text-2xl font-semibold mb-4">UKM MAPALA (Mahasiswa Pecinta Alam)</h2>
+                <p class="mb-4">UKM MAPALA adalah komunitas pecinta alam yang aktif melakukan kegiatan pendakian,
+                    konservasi, dan pelatihan survival.</p>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>Ketua: Fajar Nugroho</li>
+                    <li>Sekretaris: Lestari Putri</li>
+                    <li>Bendahara: Agus Santoso</li>
+                    <li>Divisi Pendakian</li>
+                    <li>Divisi Konservasi</li>
+                    <li>Divisi Pelatihan Survival</li>
+                </ul>
+            </section>
+
+            <!-- UKM Jurnalistik -->
+            <section id="jurnalistik" class="mb-10 bg-white p-6 rounded shadow">
+                <h2 class="text-2xl font-semibold mb-4">UKM Jurnalistik</h2>
+                <p class="mb-4">UKM Jurnalistik mengembangkan kemampuan menulis, fotografi, dan peliputan berita di
+                    lingkungan kampus.</p>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>Ketua: Rina Wulandari</li>
+                    <li>Sekretaris: Dedi Kurniawan</li>
+                    <li>Bendahara: Sari Melati</li>
+                    <li>Divisi Penulisan</li>
+                    <li>Divisi Fotografi</li>
+                    <li>Divisi Peliputan</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
